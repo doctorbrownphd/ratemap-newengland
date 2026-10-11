@@ -1,0 +1,39 @@
+{
+  "id": "unh-dtou",
+  "utility": "Unitil NH",
+  "operatingCompany": "Unitil Energy Systems",
+  "eiaId": "19390",
+  "state": "NH",
+  "name": "Rate TOU-R · Time-of-Use",
+  "rateCode": "TOU-R",
+  "customerClass": "residential",
+  "periodStructure": "tou-3",
+  "hasDemand": false,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "peak": { "hours": [15, 20], "weekendsOff": true },
+    "mid": { "hours": [6, 15], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.25172, "delivery": 0.28959 },
+    "mid": { "supply": 0.09179, "delivery": 0.07547 },
+    "off": { "supply": 0.09121, "delivery": 0.06951 }
+  },
+  "fixedCharge": 16.22,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.22, "note": "NH NM 2.0: supply + trans + 25% dist (DE 16-576)" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2025-08-01", "rates": { "peak": { "supply": 0.24579, "delivery": 0.28959 }, "mid": { "supply": 0.08963, "delivery": 0.07547 }, "off": { "supply": 0.08906, "delivery": 0.06951 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.10668 },
+    { "name": "System Benefits", "rate": 0.00778 },
+    { "name": "Stranded Cost", "rate": 0.00001 }
+  ],
+  "source": "NH PUC · DE 24-070",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com NH-Residential-Electric-Rates.pdf"
+}

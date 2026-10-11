@@ -1,0 +1,40 @@
+{
+  "id": "uma-rd",
+  "utility": "Unitil MA",
+  "operatingCompany": "Fitchburg Gas and Electric Light Company",
+  "eiaId": "6272",
+  "state": "MA",
+  "name": "Rate R1 · Standard Residential",
+  "rateCode": "R1",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-06-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.16247, "delivery": 0.27384 }
+  },
+  "fixedCharge": 8.50,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-two-rate", "rate": 0.44, "excessRate": 0.04, "note": "MA Class I NM: monthly offset at retail, excess at avoided cost" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.19304, "delivery": 0.27384 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.14206, "delivery": 0.27384 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.12866, "delivery": 0.27384 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.16357 },
+    { "name": "Transmission", "rate": 0.04201 },
+    { "name": "Net Metering Recovery", "rate": 0.02717 },
+    { "name": "Distributed Solar", "rate": 0.01437 },
+    { "name": "Energy Efficiency", "rate": 0.02622 },
+    { "name": "Renewable Resource", "rate": 0.00050 }
+  ],
+  "source": "Unitil MA · Summary of Electric Service Rates 2026",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com MA-Residential-Electric-Rates.pdf"
+}

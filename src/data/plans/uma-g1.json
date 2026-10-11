@@ -1,0 +1,32 @@
+{
+  "id": "uma-g1",
+  "utility": "Unitil MA",
+  "operatingCompany": "Fitchburg Gas and Electric Light Company",
+  "eiaId": "6167",
+  "state": "MA",
+  "name": "Rate G-1 · Small General Service",
+  "rateCode": "G-1",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-04-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.16247, "delivery": 0.17340 }
+  },
+  "fixedCharge": 12.00,
+  "demandRate": 0,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.19304, "delivery": 0.17340 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.14206, "delivery": 0.17340 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.12866, "delivery": 0.17340 } } }
+  ],
+  "source": "Unitil MA · Commercial Electric Rates 2026",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com MA-Commercial-Electric-Rates.pdf"
+}

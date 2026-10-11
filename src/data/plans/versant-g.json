@@ -1,0 +1,44 @@
+{
+  "id": "versant-g",
+  "utility": "Versant Power ME",
+  "operatingCompany": "Versant Power (Bangor Hydro District)",
+  "eiaId": "1179",
+  "state": "ME",
+  "name": "Rate B-1 · Small General Service",
+  "rateCode": "B-1",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-01-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": {
+      "supply": 0.12954,
+      "delivery": [
+        { "upTo": 100, "rate": 0 },
+        { "upTo": null, "rate": 0.18538 }
+      ]
+    }
+  },
+  "fixedCharge": 22.81,
+  "demandRate": 0,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-12-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-01-01", "rates": { "flat": { "supply": 0.10763, "delivery": [{ "upTo": 100, "rate": 0 }, { "upTo": null, "rate": 0.18538 }] } } },
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.10263, "delivery": [{ "upTo": 100, "rate": 0 }, { "upTo": null, "rate": 0.18538 }] } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.10563, "delivery": [{ "upTo": 100, "rate": 0 }, { "upTo": null, "rate": 0.18538 }] } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.128730 },
+    { "name": "Transmission", "rate": 0.060420 },
+    { "name": "Stranded Cost", "rate": -0.003770 }
+  ],
+  "source": "Maine PUC · Versant Power BHD delivery rates + Standard Offer 2026 + OpenEI USURDB",
+  "sourceUrl": "https://www.maine.gov/mpuc/regulated-utilities/electricity/delivery-rates",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "web-research · maine.gov/mpuc delivery-rates table (eff. 1/1/2026): BHD delivery dist $0.128730 + trans $0.060420 - stranded $0.003770 = $0.185380/kWh · minimum charge $22.81/mo includes 100 kWh (from OpenEI USURDB ID 68dd69210d0e225f8200e63a, verified Oct 2025 tariff) · standard offer $0.12954/kWh from maine.gov/mpuc/standard-offer-rates/bhd docket 2025-00157 (100% NB Energy Marketing) · Rate B-1 Business Eco Rate for commercial <25 kW, same delivery components as Rate A · no demand charge"
+}

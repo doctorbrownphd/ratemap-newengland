@@ -1,0 +1,31 @@
+{
+  "id": "gmp-r",
+  "utility": "Green Mountain Power VT",
+  "operatingCompany": "Green Mountain Power Corp",
+  "eiaId": "7601",
+  "state": "VT",
+  "name": "Rate 1 · Residential",
+  "rateCode": "1",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2025-10-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0, "delivery": 0.21457 }
+  },
+  "fixedCharge": 19.04,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.217, "note": "VT Rule 5.100: blended rate $0.207 + Cat I adjustor $0.01 (RECs to utility)" },
+  "effectiveThrough": "2026-09-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-10-01", "rates": { "flat": { "supply": 0, "delivery": 0.20439 } } }
+  ],
+  "source": "Green Mountain Power · Rate 1 Residential Service tariff",
+  "sourceUrl": "https://greenmountainpower.com/rates/",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "web-research · greenmountainpower.com/rates/ → Rate 1: customer charge $0.626/day ($19.04/mo), usage $0.21457/kWh · GMP is vertically integrated (bundled supply+delivery), full rate in delivery field, supply=0 · effective w/ bills rendered on/after 10/1/2025 · 100% renewable · history: Oct 2024 rate back-calculated from 4.98% FY25 adjustment (MYRP Record of Filings)"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "evma-r1-cambridge",
+  "utility": "Eversource MA",
+  "operatingCompany": "NSTAR Electric",
+  "eiaId": "13433",
+  "state": "MA",
+  "name": "Rate R-1 · Residential (Cambridge)",
+  "rateCode": "R-1",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-04-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.15629, "delivery": 0.18580 }
+  },
+  "fixedCharge": 10.00,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-two-rate", "rate": 0.34, "excessRate": 0.04, "note": "MA Class I NM: monthly offset at retail, excess at avoided cost" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.12017, "delivery": 0.18580 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.13241, "delivery": 0.18580 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.14884, "delivery": 0.18580 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.09443 },
+    { "name": "Transition", "rate": -0.00077 },
+    { "name": "Transmission", "rate": 0.04673 },
+    { "name": "Revenue Decoupling", "rate": 0.00539 },
+    { "name": "Distributed Solar", "rate": 0.00583 },
+    { "name": "Net Metering Recovery", "rate": 0.00625 },
+    { "name": "Energy Efficiency", "rate": 0.02506 },
+    { "name": "Renewable Energy", "rate": 0.00050 },
+    { "name": "EV Program", "rate": 0.00238 }
+  ],
+  "source": "Eversource MA · 2026 Summary of Electric Rates (Cambridge)",
+  "sourceUrl": "https://www.eversource.com/docs/default-source/rates-tariffs/ema-cambridge-rates.pdf",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com/docs/rates-tariffs/ema-cambridge-rates.pdf"
+}

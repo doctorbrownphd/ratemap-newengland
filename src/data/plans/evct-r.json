@@ -1,0 +1,42 @@
+{
+  "id": "evct-r",
+  "utility": "Eversource CT",
+  "operatingCompany": "Connecticut Light & Power",
+  "eiaId": "4176",
+  "state": "CT",
+  "name": "Rate 1 · Residential",
+  "rateCode": "1",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.12641, "delivery": 0.11905 }
+  },
+  "fixedCharge": 9.62,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.25, "note": "CT RRES netting tariff minus $0.04 Solar Energy Adjustment" },
+  "effectiveThrough": "2026-06-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.08995, "delivery": 0.11905 } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.11190, "delivery": 0.11905 } } },
+    { "effectiveDate": "2025-07-01", "rates": { "flat": { "supply": 0.09748, "delivery": 0.11905 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.05844 },
+    { "name": "ESI", "rate": 0.02031 },
+    { "name": "RAM", "rate": 0.00011 },
+    { "name": "Transmission", "rate": 0.05050 },
+    { "name": "CPB", "rate": 0.00504 },
+    { "name": "CTA", "rate": 0.00496 },
+    { "name": "FMCC", "rate": -0.02031 }
+  ],
+  "source": "Eversource CT · Rate 1 Tariff + Generation Rates (Jan–Jun 2026)",
+  "sourceUrl": "https://www.eversource.com/content/docs/default-source/rates-tariffs/ct-electric/rate-1-ct.pdf",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · rate-1-ct.pdf effective 5/1/2026 · delivery = dist 5.844 + ESI 2.031 + RAM 0.011 + trans 5.050 + CPB 0.504 + CTA 0.496 + FMCC -2.031 = 11.905¢ · supply = GSC 12.791 - FMCC-Gen 0.150 = 12.641¢"
+}

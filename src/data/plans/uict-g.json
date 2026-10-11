@@ -1,0 +1,33 @@
+{
+  "id": "uict-g",
+  "utility": "United Illuminating CT",
+  "operatingCompany": "United Illuminating Co",
+  "eiaId": "19497",
+  "state": "CT",
+  "name": "Rate GST · General Service Time-of-Use",
+  "rateCode": "GST",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": true,
+  "effectiveDate": "2026-01-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.13889, "delivery": 0.04111 }
+  },
+  "fixedCharge": 83.53,
+  "demandRate": 20.31,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-06-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-01-01", "rates": { "flat": { "supply": 0.17052, "delivery": 0.04111 } } },
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.12591, "delivery": 0.04111 } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.13889, "delivery": 0.04111 } } }
+  ],
+  "source": "United Illuminating · Rate GST Schedule (eff. 1/1/2026) via OpenEI USURDB + UI standard service filing",
+  "sourceUrl": "https://www.uinet.com/documents/d/uinet/0-1-schedule-of-rates-and-riders",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "web-research · OpenEI USURDB ID 69af1c6a9a6e00988106638e (expert-verified, eff. 1/1/2026): customer charge $83.53/mo, energy $0.179995/kWh (tier 1, delivery+supply combined) adj -$0.002161, demand $20.31/kW on-peak + $5.18/kW off-peak · supply avg ~$0.13889 (on-peak 15.389¢ + off-peak 12.389¢ per energychoicematters.com 11/2025) → delivery ~$0.04111/kWh · PURA-approved distribution rates eff. 11/1/2025 · demand-based rate similar in structure to Eversource CT Rate 30"
+}

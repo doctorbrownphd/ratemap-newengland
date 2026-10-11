@@ -1,0 +1,38 @@
+{
+  "id": "evnh-g",
+  "utility": "Eversource NH",
+  "operatingCompany": "Public Service Co of NH",
+  "eiaId": "15472",
+  "state": "NH",
+  "name": "Rate G · General Service",
+  "rateCode": "G",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": true,
+  "effectiveDate": "2026-06-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.11303, "delivery": 0.04608 }
+  },
+  "fixedCharge": 21.00,
+  "demandRate": 25.68,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.10400, "delivery": 0.04608 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.08900, "delivery": 0.04608 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.11196, "delivery": 0.04608 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.02325 },
+    { "name": "Transmission", "rate": 0.01326 },
+    { "name": "Stranded Cost", "rate": 0.00339 },
+    { "name": "System Benefits", "rate": 0.00618 }
+  ],
+  "source": "Eversource NH · 2026 Summary of Electric Rates",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com nh-summary-rates.pdf · delivery 2.325+1.326+0.339+0.618=4.608¢ · demand 14.25+0.94-0.10+9.84+0.75=$25.68"
+}

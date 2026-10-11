@@ -1,0 +1,36 @@
+{
+  "id": "cmp-g",
+  "utility": "Central Maine Power ME",
+  "operatingCompany": "Central Maine Power Co",
+  "eiaId": "3266",
+  "state": "ME",
+  "name": "Rate SGS · Small General Service",
+  "rateCode": "SGS",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-01-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": {
+      "supply": 0.12721,
+      "delivery": 0.10745
+    }
+  },
+  "fixedCharge": 46.38,
+  "demandRate": 0,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-12-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-01-01", "rates": { "flat": { "supply": 0.10836, "delivery": 0.10745 } } },
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.10636, "delivery": 0.10745 } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.10613, "delivery": 0.10745 } } }
+  ],
+  "source": "Maine PUC · CMP Rate SGS tariff (47th Revision, eff. 1/1/2026) + Standard Offer 2026",
+  "sourceUrl": "https://www.cmpco.com/documents/d/cmp/sgs-pdf",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "web-research · CMP SGS tariff 47th Revision eff. 1/1/2026 (cmpco.com/documents/d/cmp/sgs-pdf): service charge $46.38/mo single-phase, kWh charge $0.107452/kWh (dist+trans+stranded combined delivery) · supply $0.12721/kWh standard offer from maine.gov/mpuc docket 2025-00157 (25% Constellation, 25% NB Energy Marketing, 50% NextEra) · max demand <20 kW, no demand charge · three-phase service charge $54.31/mo (single-phase used as default)"
+}

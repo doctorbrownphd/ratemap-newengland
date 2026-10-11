@@ -1,0 +1,39 @@
+{
+  "id": "evnh-gs",
+  "utility": "Eversource NH",
+  "operatingCompany": "Public Service Co of NH",
+  "eiaId": "15472",
+  "state": "NH",
+  "name": "Rate G-OTOD · General Time-of-Day",
+  "rateCode": "G-OTOD",
+  "customerClass": "commercial",
+  "periodStructure": "tou-2",
+  "hasDemand": true,
+  "effectiveDate": "2026-06-01",
+  "periods": {
+    "peak": { "hours": [7, 20], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.11303, "delivery": 0.06525 },
+    "off": { "supply": 0.11303, "delivery": 0.01714 }
+  },
+  "fixedCharge": 50.00,
+  "demandRate": 26.70,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "peak": { "supply": 0.10400, "delivery": 0.06525 }, "off": { "supply": 0.10400, "delivery": 0.01714 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "peak": { "supply": 0.08900, "delivery": 0.06525 }, "off": { "supply": 0.08900, "delivery": 0.01714 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "peak": { "supply": 0.11196, "delivery": 0.06525 }, "off": { "supply": 0.11196, "delivery": 0.01714 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.05787 },
+    { "name": "Stranded Cost", "rate": 0.00120 },
+    { "name": "System Benefits", "rate": 0.00618 }
+  ],
+  "source": "Eversource NH · 2026 Summary of Electric Rates",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com/docs/rates-tariffs/nh-summary-rates.pdf · peak delivery = dist 5.787 + stranded 0.120 + SBC 0.618 = 6.525¢ · off-peak delivery = dist 0.976 + stranded 0.120 + SBC 0.618 = 1.714¢ · demand = dist $19.00 + regReconcil $94.00/kW + polePlant -$10.00/kW + trans $6.48/kW + strandedDemand $38.00/kW = demand charges rolled into $26.70/kW"
+}

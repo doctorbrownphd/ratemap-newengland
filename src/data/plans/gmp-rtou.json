@@ -1,0 +1,33 @@
+{
+  "id": "gmp-rtou",
+  "utility": "Green Mountain Power VT",
+  "operatingCompany": "Green Mountain Power Corp",
+  "eiaId": "7601",
+  "state": "VT",
+  "name": "Rate 11 · Residential Time-of-Use",
+  "rateCode": "11",
+  "customerClass": "residential",
+  "periodStructure": "tou-2",
+  "hasDemand": false,
+  "effectiveDate": "2025-10-01",
+  "periods": {
+    "peak":  { "hours": [13, 21], "weekendsOff": true },
+    "off":   { "hours": [0, 24],  "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0, "delivery": 0.34072 },
+    "off":  { "supply": 0, "delivery": 0.14522 }
+  },
+  "fixedCharge": 25.25,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.217, "note": "VT Rule 5.100: blended rate $0.207 + Cat I adjustor $0.01 (RECs to utility)" },
+  "effectiveThrough": "2026-09-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-10-01", "rates": { "peak": { "supply": 0, "delivery": 0.32456 }, "off": { "supply": 0, "delivery": 0.13833 } } }
+  ],
+  "source": "Green Mountain Power · Rate 11 Residential Time-of-Use tariff",
+  "sourceUrl": "https://greenmountainpower.com/rates/",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "web-research · greenmountainpower.com/rates/ → Rate 11: customer charge $0.830/day ($25.25/mo), peak $0.34072/kWh, off-peak $0.14522/kWh · peak = 8 consecutive hours between 1-9pm Mon-Fri · GMP vertically integrated, full rate in delivery, supply=0 · history: Oct 2024 rates back-calculated from 4.98% FY25 adjustment"
+}

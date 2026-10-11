@@ -1,0 +1,41 @@
+{
+  "id": "rie-r",
+  "utility": "Rhode Island Energy",
+  "operatingCompany": "Narragansett Electric Co",
+  "eiaId": "13214",
+  "state": "RI",
+  "name": "Rate A-16 · Basic Residential",
+  "rateCode": "A-16",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-04-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.11150, "delivery": 0.15064 }
+  },
+  "fixedCharge": 10.88,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.232, "note": "RI net metering: 80% of retail (post-April 2023, RIGL 39-26.4)" },
+  "effectiveThrough": "2026-09-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-04-01", "rates": { "flat": { "supply": 0.10377, "delivery": 0.15064 } } },
+    { "effectiveDate": "2024-10-01", "rates": { "flat": { "supply": 0.16387, "delivery": 0.15064 } } },
+    { "effectiveDate": "2025-04-01", "rates": { "flat": { "supply": 0.10068, "delivery": 0.15064 } } },
+    { "effectiveDate": "2025-10-01", "rates": { "flat": { "supply": 0.14770, "delivery": 0.15064 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.05898 },
+    { "name": "Transmission", "rate": 0.05773 },
+    { "name": "Transition", "rate": 0.00239 },
+    { "name": "Energy Efficiency", "rate": 0.01199 },
+    { "name": "RE Distribution", "rate": 0.01955 }
+  ],
+  "source": "Rhode Island Energy · RIPUC Docket 26-03-EL April 2026 Corrected Rates + Tariff No. 2224 (A-16)",
+  "sourceUrl": "https://ripuc.ri.gov/sites/g/files/xkgbur841/files/2026-03/26-03-EL-April%201,%202026%20Effective%20Rates-Corrected%20PUC%20Combined%20Data%20Request%20(PUC%203-18-26).pdf",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · RIPUC Docket 26-03-EL corrected filing 3/18/2026 · fixed = cust $6.72 + LIHEAP $0.78 + REG $3.38 = $10.88 · delivery = dist 5.898 + trans 5.773 + transition 0.239 + EE 1.199 + RE dist 1.955 = 15.064¢ · supply (LRS) = 11.150¢ · effective 4/1/2026"
+}

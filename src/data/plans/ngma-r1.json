@@ -1,0 +1,42 @@
+{
+  "id": "ngma-r1",
+  "utility": "National Grid MA",
+  "operatingCompany": "Massachusetts Electric Co",
+  "eiaId": "11138",
+  "state": "MA",
+  "name": "Rate R-1",
+  "rateCode": "R-1",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-02-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.14751, "delivery": 0.20560 }
+  },
+  "fixedCharge": 10.00,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-two-rate", "rate": 0.36, "excessRate": 0.04, "note": "MA Class I NM: monthly offset at retail, excess at avoided cost" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.14448, "delivery": 0.20560 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.12691, "delivery": 0.20560 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.15484, "delivery": 0.20560 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.09242 },
+    { "name": "Transition", "rate": -0.00036 },
+    { "name": "Transmission", "rate": 0.05798 },
+    { "name": "Energy Efficiency", "rate": 0.02879 },
+    { "name": "Distributed Solar", "rate": 0.00729 },
+    { "name": "Net Metering Recovery", "rate": 0.01724 },
+    { "name": "EV Program", "rate": 0.00174 },
+    { "name": "Renewable Energy", "rate": 0.00050 }
+  ],
+  "source": "National Grid MA · Summary of Rates 2025",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · nationalgridus.com/media/pdfs/electric-rates/ma/cm4394_maweb.pdf + web-research · maenergyratings.com"
+}

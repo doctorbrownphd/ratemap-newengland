@@ -1,0 +1,44 @@
+{
+  "id": "cmp-r",
+  "utility": "Central Maine Power ME",
+  "operatingCompany": "Central Maine Power Co",
+  "eiaId": "3266",
+  "state": "ME",
+  "name": "Rate A · Residential",
+  "rateCode": "A",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-01-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": {
+      "supply": 0.12721,
+      "delivery": [
+        { "upTo": 50, "rate": 0 },
+        { "upTo": null, "rate": 0.13647 }
+      ]
+    }
+  },
+  "fixedCharge": 17.92,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-retail", "rate": 0.27, "note": "ME Net Energy Billing: full retail 1:1" },
+  "effectiveThrough": "2026-12-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-01-01", "rates": { "flat": { "supply": 0.10836, "delivery": [{ "upTo": 50, "rate": 0 }, { "upTo": null, "rate": 0.13647 }] } } },
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.10636, "delivery": [{ "upTo": 50, "rate": 0 }, { "upTo": null, "rate": 0.13647 }] } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.10613, "delivery": [{ "upTo": 50, "rate": 0 }, { "upTo": null, "rate": 0.13647 }] } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.084311 },
+    { "name": "Transmission", "rate": 0.053154 },
+    { "name": "Stranded Cost", "rate": -0.000991 }
+  ],
+  "source": "Maine PUC · Residential Electric Rates table + Standard Offer CMP 2026",
+  "sourceUrl": "https://www.maine.gov/mpuc/regulated-utilities/electricity/delivery-rates",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "web-research · maine.gov/mpuc delivery-rates table: fixed $17.92/mo incl 50 kWh, delivery dist $0.084311 + trans $0.053154 - stranded $0.000991 = $0.136474/kWh · standard offer $0.12721/kWh from maine.gov/mpuc/standard-offer-rates/cmp · ME is competitive-supply state, CMP delivery-only, supply via Standard Offer"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "evct-g",
+  "utility": "Eversource CT",
+  "operatingCompany": "Connecticut Light & Power",
+  "eiaId": "4176",
+  "state": "CT",
+  "name": "Rate 30 · Small General Service",
+  "rateCode": "30",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": true,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.11774, "delivery": -0.01011 }
+  },
+  "fixedCharge": 44.00,
+  "demandRate": 32.31,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-06-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.08726, "delivery": -0.01011 } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.10710, "delivery": -0.01011 } } },
+    { "effectiveDate": "2025-07-01", "rates": { "flat": { "supply": 0.09556, "delivery": -0.01011 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "RAM", "rate": 0.00011 },
+    { "name": "CPB", "rate": 0.00662 },
+    { "name": "FMCC", "rate": -0.01684 }
+  ],
+  "source": "Eversource CT · Rate 30 Tariff + Generation Rates (Jan–Jun 2026)",
+  "sourceUrl": "https://www.eversource.com/content/docs/default-source/rates-tariffs/ct-electric/rate-30-ct.pdf",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · rate-30-ct.pdf effective 5/1/2026 · demand = dist 14.22 + ESI 3.78 + trans 12.84 + CTA 1.47 = $32.31/kW (over 2 kW) · delivery/kWh = RAM 0.011 + CPB 0.662 + FMCC -1.684 = -1.011¢ · supply = GSC 11.924 - FMCC-Gen 0.150 = 11.774¢"
+}

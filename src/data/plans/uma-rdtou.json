@@ -1,0 +1,44 @@
+{
+  "id": "uma-rdtou",
+  "utility": "Unitil MA",
+  "operatingCompany": "Fitchburg Gas and Electric Light Company",
+  "eiaId": "6272",
+  "state": "MA",
+  "name": "Rate EV-RES · Electric Vehicle",
+  "rateCode": "EV-RES",
+  "customerClass": "residential",
+  "periodStructure": "tou-3",
+  "hasDemand": false,
+  "effectiveDate": "2026-06-01",
+  "periods": {
+    "peak": { "hours": [15, 20], "weekendsOff": true },
+    "mid": { "hours": [6, 15], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.18974, "delivery": 0.51897 },
+    "mid": { "supply": 0.16803, "delivery": 0.30247 },
+    "off": { "supply": 0.15152, "delivery": 0.18406 }
+  },
+  "fixedCharge": 6.39,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-two-rate", "rate": 0.44, "excessRate": 0.04, "note": "MA Class I NM: monthly offset at retail, excess at avoided cost" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "peak": { "supply": 0.22545, "delivery": 0.51897 }, "mid": { "supply": 0.19966, "delivery": 0.30247 }, "off": { "supply": 0.18003, "delivery": 0.18406 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "peak": { "supply": 0.16590, "delivery": 0.51897 }, "mid": { "supply": 0.14694, "delivery": 0.30247 }, "off": { "supply": 0.13248, "delivery": 0.18406 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "peak": { "supply": 0.15026, "delivery": 0.51897 }, "mid": { "supply": 0.13306, "delivery": 0.30247 }, "off": { "supply": 0.12000, "delivery": 0.18406 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.16357 },
+    { "name": "Transmission", "rate": 0.04201 },
+    { "name": "Net Metering Recovery", "rate": 0.02717 },
+    { "name": "Distributed Solar", "rate": 0.01437 },
+    { "name": "Energy Efficiency", "rate": 0.02622 },
+    { "name": "Renewable Resource", "rate": 0.00050 }
+  ],
+  "source": "Unitil MA · Summary of Electric Service Rates 2026",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com MA-Residential-Electric-Rates.pdf"
+}

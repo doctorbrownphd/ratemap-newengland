@@ -1,0 +1,30 @@
+{
+  "id": "unh-g1",
+  "utility": "Unitil NH",
+  "operatingCompany": "Unitil Energy Systems",
+  "eiaId": "19390",
+  "state": "NH",
+  "name": "Rate G2 · General Service",
+  "rateCode": "G2",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": true,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.11253, "delivery": 0.05003 }
+  },
+  "fixedCharge": 29.19,
+  "demandRate": 14.86,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.10988, "delivery": 0.05003 } } }
+  ],
+  "source": "Unitil NH · Commercial Electric Rates 2026",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com NH-Commercial-Electric-Rates.pdf"
+}

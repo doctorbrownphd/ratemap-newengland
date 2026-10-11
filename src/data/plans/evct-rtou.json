@@ -1,0 +1,34 @@
+{
+  "id": "evct-rtou",
+  "utility": "Eversource CT",
+  "operatingCompany": "Connecticut Light & Power",
+  "eiaId": "4176",
+  "state": "CT",
+  "name": "Rate 7 · Residential Time-of-Day",
+  "rateCode": "7",
+  "customerClass": "residential",
+  "periodStructure": "tou-2",
+  "hasDemand": false,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "peak": { "hours": [12, 20], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.15246, "delivery": 0.15853 },
+    "off": { "supply": 0.11746, "delivery": 0.10125 }
+  },
+  "fixedCharge": 9.62,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.25, "note": "CT RRES netting tariff minus $0.04 Solar Energy Adjustment" },
+  "effectiveThrough": "2026-06-30",
+  "rateHistory": [
+    { "effectiveDate": "2025-01-01", "rates": { "peak": { "supply": 0.13808, "delivery": 0.15853 }, "off": { "supply": 0.10308, "delivery": 0.10125 } } },
+    { "effectiveDate": "2025-07-01", "rates": { "peak": { "supply": 0.12282, "delivery": 0.15853 }, "off": { "supply": 0.08782, "delivery": 0.10125 } } }
+  ],
+  "source": "Eversource CT · Rate 7 Tariff + Generation Rates (Jan–Jun 2026)",
+  "sourceUrl": "https://www.eversource.com/docs/default-source/rates-tariffs/ct-electric/rate-7-ct.pdf",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · rate-7-ct.pdf effective 5/1/2026 · peak delivery = dist 5.513 + ESI 2.031 + RAM 0.011 + trans 11.741 + CPB 0.504 + CTA 0.496 + FMCC -4.443 = 15.853¢ · off-peak delivery = dist 5.513 + ESI 2.031 + RAM 0.011 + trans 2.525 + CPB 0.504 + CTA 0.496 + FMCC -0.955 = 10.125¢ · supply peak = 15.396 - 0.150 = 15.246¢ · supply off = 11.896 - 0.150 = 11.746¢"
+}

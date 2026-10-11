@@ -1,0 +1,33 @@
+{
+  "id": "gmp-ev",
+  "utility": "Green Mountain Power VT",
+  "operatingCompany": "Green Mountain Power Corp",
+  "eiaId": "7601",
+  "state": "VT",
+  "name": "Rate 74 · Residential TOU EV",
+  "rateCode": "74",
+  "customerClass": "residential",
+  "periodStructure": "tou-2",
+  "hasDemand": false,
+  "effectiveDate": "2025-10-01",
+  "periods": {
+    "peak":  { "hours": [13, 21], "weekendsOff": true },
+    "off":   { "hours": [0, 24],  "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0, "delivery": 0.21457 },
+    "off":  { "supply": 0, "delivery": 0.16330 }
+  },
+  "fixedCharge": 19.04,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.217, "note": "VT Rule 5.100: blended rate $0.207 + Cat I adjustor $0.01 (RECs to utility)" },
+  "effectiveThrough": "2026-09-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-10-01", "rates": { "peak": { "supply": 0, "delivery": 0.20439 }, "off": { "supply": 0, "delivery": 0.15556 } } }
+  ],
+  "source": "Green Mountain Power · Rate 74 Residential TOU EV Service tariff",
+  "sourceUrl": "https://greenmountainpower.com/rates/",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "web-research · greenmountainpower.com/rates/ → Rate 74: peak $0.21457/kWh (same as Rate 1), off-peak $0.16330/kWh · peak Mon-Fri 1-9pm · customer-managed EV charging with set peak/off-peak hours · requires compatible EV charger (ChargePoint, Flo, Emporia) · GMP vertically integrated, full rate in delivery, supply=0 · customer charge assumed same as Rate 1 ($0.626/day) · history: Oct 2024 rates back-calculated from 4.98% FY25 adjustment"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "evma-r1hp",
+  "utility": "Eversource MA",
+  "operatingCompany": "NSTAR Electric",
+  "eiaId": "14064",
+  "state": "MA",
+  "name": "Rate R-1HP · Heat Pump",
+  "rateCode": "R-1HP",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-04-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.15629, "delivery": 0.18484 }
+  },
+  "seasonalRates": [
+    { "months": [4,5,6,7,8,9], "rates": { "flat": { "supply": 0.15629, "delivery": 0.18484 } } },
+    { "months": [10,11,0,1,2,3], "rates": { "flat": { "supply": 0.15629, "delivery": 0.09752 } } }
+  ],
+  "fixedCharge": 10.00,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-two-rate", "rate": 0.34, "excessRate": 0.04, "note": "MA Class I NM: monthly offset at retail, excess at avoided cost" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "flat": { "supply": 0.12017, "delivery": 0.18484 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "flat": { "supply": 0.13241, "delivery": 0.18484 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.14884, "delivery": 0.18484 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.09443 },
+    { "name": "Transition", "rate": -0.00077 },
+    { "name": "Transmission", "rate": 0.04673 },
+    { "name": "Revenue Decoupling", "rate": 0.00443 },
+    { "name": "Distributed Solar", "rate": 0.00583 },
+    { "name": "Net Metering Recovery", "rate": 0.00625 },
+    { "name": "Energy Efficiency", "rate": 0.02506 },
+    { "name": "Renewable Energy", "rate": 0.00050 },
+    { "name": "EV Program", "rate": 0.00238 }
+  ],
+  "source": "Eversource MA · 2026 Summary of Electric Rates (Greater Boston)",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com ema-greater-boston-rates.pdf · seasonal rates modeled (May-Oct / Nov-Apr) · summer delivery = dist 9.443 + trans 4.673 - transition 0.077 + revDecoup 0.443 + distSolar 0.583 + NM 0.625 + EE 2.506 + RE 0.050 + EV 0.238 = 18.484¢ · winter delivery = dist 4.892 + trans 1.492 - transition 0.077 + revDecoup 0.443 + distSolar 0.583 + NM 0.625 + EE 2.506 + RE 0.050 + EV 0.238 = 9.752¢"
+}

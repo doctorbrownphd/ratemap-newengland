@@ -1,0 +1,41 @@
+{
+  "id": "evma-g1nd",
+  "utility": "Eversource MA",
+  "operatingCompany": "NSTAR Electric",
+  "eiaId": "14064",
+  "state": "MA",
+  "name": "Rate G-1 · Small General (No Demand)",
+  "rateCode": "G-1-ND",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-04-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.15030, "delivery": 0.14274 }
+  },
+  "fixedCharge": 15.00,
+  "demandRate": 0,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2025-08-01", "rates": { "flat": { "supply": 0.15150, "delivery": 0.14274 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.07942 },
+    { "name": "Transition", "rate": -0.00077 },
+    { "name": "Transmission", "rate": 0.04208 },
+    { "name": "Revenue Decoupling", "rate": -0.00034 },
+    { "name": "Distributed Solar", "rate": 0.00450 },
+    { "name": "Net Metering Recovery", "rate": 0.00483 },
+    { "name": "Energy Efficiency", "rate": 0.01072 },
+    { "name": "Renewable Energy", "rate": 0.00050 },
+    { "name": "EV Program", "rate": 0.00180 }
+  ],
+  "source": "Eversource MA · 2026 Summary of Electric Rates (Greater Boston)",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com ema-greater-boston-rates.pdf · G-1 Non-Demand: dist 7.942 + trans 4.208 - transition 0.077 - revDecoup 0.034 + distSolar 0.450 + NM 0.483 + EE 1.072 + RE 0.050 + EV 0.180 = 14.274¢ · supply from official eversource.com EMA business supply rates (Feb-Jul 2026: 15.030¢) · G-1 history: only Aug 2025 (15.150¢) found; earlier commercial periods not publicly archived"
+}

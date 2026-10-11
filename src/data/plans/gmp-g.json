@@ -1,0 +1,31 @@
+{
+  "id": "gmp-g",
+  "utility": "Green Mountain Power VT",
+  "operatingCompany": "Green Mountain Power Corp",
+  "eiaId": "7601",
+  "state": "VT",
+  "name": "Rate 6 · General Service",
+  "rateCode": "6",
+  "customerClass": "commercial",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2025-10-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0, "delivery": 0.21815 }
+  },
+  "fixedCharge": 23.70,
+  "demandRate": 0,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-09-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-10-01", "rates": { "flat": { "supply": 0, "delivery": 0.20780 } } }
+  ],
+  "source": "Green Mountain Power · Rate 6 General Service tariff",
+  "sourceUrl": "https://greenmountainpower.com/rates/",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "web-research · greenmountainpower.com/rates/ → Rate 6: customer charge $0.779/day ($23.70/mo), usage $0.21815/kWh · demand rolled into usage charge (no separate demand charge) · max 200 kW or avg <7,600 kWh/mo · GMP vertically integrated, full rate in delivery, supply=0 · history: Oct 2024 rate back-calculated from 4.98% FY25 adjustment"
+}

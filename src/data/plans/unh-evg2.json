@@ -1,0 +1,35 @@
+{
+  "id": "unh-evg2",
+  "utility": "Unitil NH",
+  "operatingCompany": "Unitil Energy Systems",
+  "eiaId": "19390",
+  "state": "NH",
+  "name": "Rate TOU-EV-G2 · Commercial EV",
+  "rateCode": "TOU-EV-G2",
+  "customerClass": "commercial",
+  "periodStructure": "tou-3",
+  "hasDemand": true,
+  "effectiveDate": "2026-05-01",
+  "periods": {
+    "peak": { "hours": [15, 20], "weekendsOff": true },
+    "mid": { "hours": [6, 15], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.24962, "delivery": 0.29014 },
+    "mid": { "supply": 0.08538, "delivery": 0.04915 },
+    "off": { "supply": 0.08592, "delivery": 0.04494 }
+  },
+  "fixedCharge": 29.19,
+  "demandRate": 7.43,
+  "exportCredit": { "type": "none", "rate": 0 },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2025-08-01", "rates": { "peak": { "supply": 0.24374, "delivery": 0.29014 }, "mid": { "supply": 0.08337, "delivery": 0.04915 }, "off": { "supply": 0.08391, "delivery": 0.04494 } } }
+  ],
+  "source": "Unitil NH · Commercial Electric Rates 2026",
+  "sourceUrl": "https://unitil.com/energy-for-businesses/electric/rates-tariffs/nh",
+  "verifiedDate": "2026-06-02",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · unitil.com NH-Commercial-Electric-Rates.pdf"
+}

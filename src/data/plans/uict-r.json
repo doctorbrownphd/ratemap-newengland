@@ -1,0 +1,34 @@
+{
+  "id": "uict-r",
+  "utility": "United Illuminating CT",
+  "operatingCompany": "United Illuminating Co",
+  "eiaId": "19497",
+  "state": "CT",
+  "name": "Rate R · Residential",
+  "rateCode": "R",
+  "customerClass": "residential",
+  "periodStructure": "flat",
+  "hasDemand": false,
+  "effectiveDate": "2026-01-01",
+  "periods": {
+    "flat": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "flat": { "supply": 0.13695, "delivery": 0.19795 }
+  },
+  "fixedCharge": 13.02,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.30, "note": "CT RRES netting tariff minus $0.04 Solar Energy Adjustment" },
+  "effectiveThrough": "2026-06-30",
+  "rateHistory": [
+    { "effectiveDate": "2024-01-01", "rates": { "flat": { "supply": 0.17063, "delivery": 0.19795 } } },
+    { "effectiveDate": "2024-07-01", "rates": { "flat": { "supply": 0.11910, "delivery": 0.19795 } } },
+    { "effectiveDate": "2025-01-01", "rates": { "flat": { "supply": 0.13568, "delivery": 0.19795 } } },
+    { "effectiveDate": "2025-07-01", "rates": { "flat": { "supply": 0.11684, "delivery": 0.19795 } } }
+  ],
+  "source": "United Illuminating · Rate R Schedule (eff. 1/1/2026) + PURA-approved delivery rates (eff. 11/1/2025) via OpenEI USURDB",
+  "sourceUrl": "https://www.uinet.com/documents/d/uinet/0-1-schedule-of-rates-and-riders",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "web-research · OpenEI USURDB ID 69af11280c671e7bff0d1bef (expert-verified, eff. 1/1/2026): customer charge $13.02/mo, delivery $0.200109/kWh (dist+trans+FMCC+energy-assistance+EE+renewables) adj -$0.002161 (rev-decoupling+trans-adj) = net $0.197948/kWh · supply $0.13695/kWh from UI standard service filing (energychoicematters.com 11/2025) confirmed by UI press release · PURA docket approved $450.8M revenue requirement eff. 11/1/2025 · total ~$0.36/kWh at meter (NuWatt, ctenergyratings)"
+}

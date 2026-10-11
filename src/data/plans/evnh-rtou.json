@@ -1,0 +1,42 @@
+{
+  "id": "evnh-rtou",
+  "utility": "Eversource NH",
+  "operatingCompany": "Public Service Co of NH",
+  "eiaId": "15472",
+  "state": "NH",
+  "name": "Rate R-OTOD · Time-of-Day",
+  "rateCode": "R-OTOD",
+  "customerClass": "residential",
+  "periodStructure": "tou-2",
+  "hasDemand": false,
+  "effectiveDate": "2026-06-01",
+  "periods": {
+    "peak": { "hours": [13, 19], "weekendsOff": true },
+    "off": { "hours": [0, 24], "weekendsOff": false }
+  },
+  "rates": {
+    "peak": { "supply": 0.11303, "delivery": 0.23751 },
+    "off": { "supply": 0.11303, "delivery": 0.08542 }
+  },
+  "fixedCharge": 25.73,
+  "demandRate": 0,
+  "exportCredit": { "type": "netting-reduced", "rate": 0.21, "note": "NH NM 2.0: supply + trans + 25% dist (DE 16-576)" },
+  "effectiveThrough": "2026-07-31",
+  "rateHistory": [
+    { "effectiveDate": "2024-08-01", "rates": { "peak": { "supply": 0.10400, "delivery": 0.23751 }, "off": { "supply": 0.10400, "delivery": 0.08542 } } },
+    { "effectiveDate": "2025-02-01", "rates": { "peak": { "supply": 0.08900, "delivery": 0.23751 }, "off": { "supply": 0.08900, "delivery": 0.08542 } } },
+    { "effectiveDate": "2025-08-01", "rates": { "peak": { "supply": 0.11196, "delivery": 0.23751 }, "off": { "supply": 0.11196, "delivery": 0.08542 } } }
+  ],
+  "deliveryComponents": [
+    { "name": "Distribution", "rate": 0.06291 },
+    { "name": "Reg Reconciliation", "rate": 0.00034 },
+    { "name": "Pole Plant", "rate": 0.00296 },
+    { "name": "Transmission", "rate": 0.04445 },
+    { "name": "Stranded Cost", "rate": 0.00466 },
+    { "name": "System Benefits", "rate": 0.00618 }
+  ],
+  "source": "Eversource NH · 2026 Summary of Electric Rates",
+  "verifiedDate": "2026-06-01",
+  "confidence": "high",
+  "obtainedVia": "pdf-parse · eversource.com/docs/rates-tariffs/nh-summary-rates.pdf"
+}
